@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>This is Html forms Learning</h2>
+    <!-- backend action using php by using action attribute -->
+    <form action="backend.php">
+
+        <!-- input we can take from the website and pass through backend  -->
+        <!-- label is tag is used to identified the id gives more interaction to user -->
+        <label for="name">Name</label>
+        <div>
+        <input type="text" name="Ashok" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+        <input type="text" name="programming" id="role">
+        </div>
+        <br>
+        <label for="exp">exprience</label>
+        <div>
+            <!-- select is tag is help to select the multiple options provider by developer -->
+          <select name="exprience" id="exp">
+            <option value="low">0-3</option>
+            <option value="medium">4-9</option>
+            <option value="high">9+</option>
+        </select>
+        </div>
+        <br>
+        <div>
+            email: <input type="email" name="name@domain.com">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="MyDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="bonus" >
+        </div>
+        <br>
+        <label for="CAR">Car</label>
+        <select name="car" id="CAR">
+            <option value="empty"></option>
+            <option value="ind">indica</option>
+            <option value="swift">swift</option>
+        </select>
+        <br>
+        <!-- textarea tag is used to give a larger input box for user to write opinions -->
+        <br>
+        Feedback: <br><textarea name="Mytext" cols="30" rows="10"></textarea>
+        <br>
+        <!-- checkbox tag i used to tic the squre box -->
+        <label for="check">Agreed</label>
+        <div>
+            <input type="checkbox" value="sign" id="check">
+        </div>
+        <br>
+        <!-- radio buttions for one name we can select one option.  -->
+        <div>
+            Gender: Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other <input
+                type="radio" name="gender">
+        </div>
+        <br>
+        <!-- submit push the details to backend where as reset is used to clear the information -->
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <div>
+            <input type="reset" value="reset">
+        </div>
+
+
+    </form>
+</body>
+
+</html>
